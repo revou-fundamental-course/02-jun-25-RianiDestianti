@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechEdu Academy - School of Fun & Learning</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <i class="fas fa-book-open"></i>
+                <span>TechEdu Academy</span>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link active">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#profile" class="nav-link">About Us</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link">Contact</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Bagian Home Dari Navbar -->
+    <section id="home" class="hero">
+        <div class="hero-background">
+            <div class="hero-overlay"></div>
+            <div class="school-decor">
+                <div class="decor-item pencil"></div>
+                <div class="decor-item book"></div>
+                <div class="decor-item backpack"></div>
+            </div>
+        </div>
+        <div class="hero-content">
+            <div class="welcome-message">
+                <h1 id="welcome-text">Welcome to Our Learning Adventure!</h1>
+                <p>Join us to explore, learn, and grow!</p>
+                <button class="cta-button" onclick="promptName()">
+                    <i class="fas fa-rocket"></i>
+                    Start Your Journey
+                </button>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="scroll-arrow"></div>
+        </div>
+    </section>
+
+    <!-- Bagian Tentang Dari Navbar -->
+    <section id="profile" class="profile-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>About TechEdu Academy</h2>
+                <div class="header-line"></div>
+            </div>
+            
+            <div class="profile-content">
+                <div class="profile-intro">
+                    <div class="intro-text">
+                        <h3>Where Learning is Fun!</h3>
+                        <p>TechEdu Academy is a magical place where young minds grow into tech wizards! Since 2010, we've been sparking creativity with fun, hands-on learning in coding, robotics, and more.</p>
+                        <p>Our colorful classrooms and friendly teachers make every day an adventure in learning!</p>
+                    </div>
+                    <div class="intro-image">
+                        <div class="image-placeholder">
+                            <i class="fas fa-school"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="vision-mission">
+                    <div class="vm-card">
+                        <div class="vm-icon">
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h4>Our Vision</h4>
+                        <p>To inspire every student to shine bright as a creative tech leader!</p>
+                    </div>
+                    <div class="vm-card">
+                        <div class="vm-icon">
+                            <i class="fas fa-heart"></i>
+                        </div>
+                        <h4>Our Mission</h4>
+                        <p>To make learning exciting with fun projects, teamwork, and cutting-edge tech!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bagian Tentang -> Fasilitas Dari Navbar -->
+    <section class="facilities-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our Fun Facilities</h2>
+                <div class="header-line"></div>
+            </div>
+            
+            <div class="facilities-grid">
+                <div class="facility-card">
+                    <div class="facility-icon">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <h3>Tech Playrooms</h3>
+                    <p>Cool labs with the latest gadgets for coding adventures!</p>
+                </div>
+                <div class="facility-card">
+                    <div class="facility-icon">
+                        <i class="fas fa-chalkboard-teacher"></i>
+                    </div>
+                    <h3>Smart Classrooms</h3>
+                    <p>Interactive rooms with fun screens and teamwork tools!</p>
+                </div>
+                <div class="facility-card">
+                    <div class="facility-icon">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <h3>Robotics Lab</h3>
+                    <p>A playground for building and coding your own robots!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bagian Kontak Dari Navbar -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Drop Us a Note!</h2>
+                <div class="header-line"></div>
+            </div>
+            
+            <div class="contact-content">
+                <div class="contact-form-container">
+                    <form id="contactForm" class="contact-form">
+                        <div class="form-group">
+                            <label for="name">Your Name</label>
+                            <input type="text" id="name" name="name" required>
+                            <span class="error-message" id="nameError"></span>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Your Email</label>
+                            <input type="email" id="email" name="email" required>
+                            <span class="error-message" id="emailError"></span>
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="phone">Phone Number</label>
+                                <input type="tel" id="phone" name="phone" required>
+                                <span class="error-message" id="phoneError"></span>
+                            </div>
+                            <div class="form-group">
+                                <label for="subject">Subject</label>
+                                <select id="subject" name="subject" required>
+                                    <option value="">Choose a subject</option>
+                                    <option value="admission">Join Our School</option>
+                                    <option value="programs">Learn About Programs</option>
+                                    <option value="partnership">Team Up With Us</option>
+                                    <option value="general">Just Say Hi!</option>
+                                </select>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Your Message</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                            <span class="error-message" id="messageError"></span>
+                        </div>
+                        
+                        <button type="submit" class="submit-btn">
+                            <i class="fas fa-paper-plane"></i>
+                            Send Your Message
+                        </button>
+                    </form>
+                </div>
+                
+                <div class="contact-info">
+                    <div class="info-card">
+                        <h4>Reach Out to Us!</h4>
+                        <div class="info-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>123 Happy Lane, Learning Town<br>Jakarta, Indonesia 12345</span>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-phone"></i>
+                            <span>+62 21 1234 5678</span>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>hello@techedu-academy.edu</span>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-clock"></i>
+                            <span>Monday - Friday: 8:00 AM - 4:00 PM<br>Saturday: 9:00 AM - 2:00 PM</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <i class="fas fa-book-open"></i>
+                        <span>TechEdu Academy</span>
+                    </div>
+                    <p>Join our fun learning community to spark creativity and build a bright tech future!</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#profile">About Us</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="#programs">Programs</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Fun Programs</h4>
+                    <ul>
+                        <li><a href="#">Coding Adventures</a></li>
+                        <li><a href="#">Web Wizards</a></li>
+                        <li><a href="#">App Creators</a></li>
+                        <li><a href="#">Data Detectives</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2025 TechEdu Academy. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Success Message -->
+    <div id="successModal" class="modal">
+        <div class="modal-content">
+            <span class="close">×</span>
+            <div class="modal-header">
+                <i class="fas fa-check-circle"></i>
+                <h3>Message Sent!</h3>
+            </div>
+            <div class="modal-body">
+                <div id="submittedData"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
